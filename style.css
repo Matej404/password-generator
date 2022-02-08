@@ -23,6 +23,7 @@ body {
 
 .container {
   background: #418870;
+  max-width: 600px;
   padding: 4rem;
   border-radius: 1rem;
   border: 3px solid black;
@@ -39,6 +40,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 2rem;
 }
 
 .headSection {
@@ -54,9 +56,6 @@ form {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  row-gap: 2rem;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -78,6 +77,7 @@ label {
 .checkbox {
   width: 1rem;
   height: 1rem;
+  margin: 1.5rem;
 }
 
 .character-amount-container {
@@ -87,6 +87,11 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.range {
+  max-width: 5rem;
+  margin-left: 5px;
 }
 
 .number-input {
@@ -99,7 +104,7 @@ label {
   padding: 2rem;
   border: 1px solid #333;
   height: 3rem;
-  width: 370px;
+  max-width: 370px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

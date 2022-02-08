@@ -16,6 +16,7 @@ body {
 
 .container {
     background: rgb(65, 136, 112);
+    max-width: 600px;
     padding: 4rem;
     border-radius: 1rem;
     border: 3px solid black;
@@ -23,6 +24,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 2rem;
 }
 
 .headSection {
@@ -36,8 +38,6 @@ body {
 form {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 2rem;
-    column-gap: 2rem;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
@@ -55,11 +55,17 @@ label {
 .checkbox {
     width: 1rem;
     height: 1rem;
+    margin: 1.5rem;
 }
 
 .character-amount-container {
     display: flex;
     align-items: center;
+}
+
+.range {
+    max-width: 5rem;
+    margin-left: 5px;
 }
 
 .number-input {
@@ -72,7 +78,7 @@ label {
     padding: 2rem;
     border: 1px solid #333;
     height: 3rem;
-    width: 370px;
+    max-width: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
